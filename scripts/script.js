@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.catalog__slider').slick({
+  $('.features__slider').slick({
       dots: true,
       arrows: true,
       draggable: false,
@@ -18,7 +18,7 @@ let formClose = document.querySelector(".modal-write-us__modal-close");
 let userName = document.querySelector(".modal-write-us__input");
 
 
-document.querySelector(".slider__buttons-list__button--1").addEventListener("click", function (evt)  {
+document.querySelector(".slider-buttons-list__button--delivery").addEventListener("click", function (evt)  {
     evt.preventDefault();
   offset = offset + 0;
   if (offset > 0)  {
@@ -28,7 +28,7 @@ document.querySelector(".slider__buttons-list__button--1").addEventListener("cli
 });
 
 
-document.querySelector(".slider__buttons-list__button--2").addEventListener("click", function (evt)  {
+document.querySelector(".slider-buttons-list__button--warranty").addEventListener("click", function (evt)  {
     evt.preventDefault();
   offset = offset + 285;
   if (offset > 0)  {
@@ -38,7 +38,7 @@ document.querySelector(".slider__buttons-list__button--2").addEventListener("cli
 });
 
 
-document.querySelector(".slider__buttons-list__button--3").addEventListener("click", function (evt)  {
+document.querySelector(".slider-buttons-list__button--credit").addEventListener("click", function (evt)  {
     evt.preventDefault();
   offset = offset + 570;
   if (offset > 0)  {
