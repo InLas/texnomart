@@ -49,25 +49,23 @@ document.querySelector(".slider-buttons-list__button--credit").addEventListener(
 
   
 mapOpen.addEventListener("click", function (evt) {
-  evt.preventDefault();;
+  evt.preventDefault();
   mapShow.classList.add("about-us__modal-map--show");
 });
 
 
-mapClose.addEventListener("click", function (evt) {
-  evt.preventDefault();;
+mapClose.addEventListener("click", function () {
   mapShow.classList.remove("about-us__modal-map--show");
 });
 
 
 formOpen.addEventListener("click", function (evt) {
-  evt.preventDefault();;
+  evt.preventDefault();
   formShow.classList.add("about-us__modal-write-us--show");
   userName.focus();
 });
 
 
-formClose.addEventListener("click", function (evt) {
-  evt.preventDefault();;
+formClose.addEventListener("click", function () {
   formShow.classList.remove("about-us__modal-write-us--show");
 });

@@ -76,6 +76,8 @@ input[type="radio"].visually-hidden {
 
 
 .top-menu  {
+    margin-bottom: 46px;
+
     background-color: #293449;
 }
 
@@ -305,9 +307,8 @@ input[type="radio"].visually-hidden {
 
 
 .main-menu  {
-    padding-bottom: 60px;
-    margin-top: 46px;
     margin-bottom: 58px;
+    padding-bottom: 60px;
 }
 
 
@@ -1512,8 +1513,6 @@ input[type="radio"].visually-hidden {
 
 .about-us  {
     position: relative;
-
-    margin-bottom: 86px;
 }
 
 
@@ -1874,7 +1873,13 @@ input[type="radio"].visually-hidden {
 
 
 .main-footer  {
+    margin-top: 86px;
+
     background-color: #32425c;
+}
+
+.main-footer--inner {
+	margin-top: 0;
 }
 
 
@@ -1882,7 +1887,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     justify-content: space-between;
 
-    padding-bottom: 49px;
+    margin-bottom: 49px;
 }
 
 
@@ -2517,8 +2522,8 @@ input[type="radio"].visually-hidden {
 .checkbox-filter__list,
 .radio-filter__list  {
     margin: 0;
-    margin-left: 35px;
     padding: 0;
+    padding-left: 35px;
 
     list-style: none;
 }
@@ -2854,7 +2859,7 @@ input[type="radio"].visually-hidden {
 
 
 .description__wrapper  {
-    padding: 40px 0 55px;
+    padding: 65px 0 65px;
 }
 
 
@@ -2862,12 +2867,19 @@ input[type="radio"].visually-hidden {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
+
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
 }
 
 
 .description__text  {
     font-size: 13px;
     line-height: 24px;
+
+    margin: 0;
+    padding: 0;
 }
 
 
