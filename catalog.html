@@ -3,9 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Technomart</title>
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
 		<link href="styles/style.css" rel="stylesheet">
 	</head>
 	<body class="inner-body">
@@ -188,17 +187,17 @@
 							<ul class="top-filter">
 								<h3 class="top-filter__title">Сортировка:</h3>
 								<li class="top-filter__item top-filter__item--price">
-									<a class="top-filter__button top-filter__button--active button" href="#">По цене</a>
+									<a class="top-filter__button  top-filter__button--active button" href="#">По цене</a>
 								</li>
 								<li class="top-filter__item top-filter__item--type">
-									<a class="top-filter__button button" href="#">По типу</a>
+									<a class="top-filter__button  button" href="#">По типу</a>
 								</li>
 								<li class="top-filter__item top-filter__item--function">
-									<a class="top-filter__button button" href="#">По функционалу</a>
+									<a class="top-filter__button  button" href="#">По функционалу</a>
 								</li>
 								<li class="top-filter__item top-filter__item--nav">
-									<a class="top-filter__nav top-filter__nav--active button" href="#">▲</a>
-									<a class="top-filter__nav button" href="#">▼</a>
+									<a class="top-filter__nav  top-filter__nav--active button" href="#"></a>
+									<a class="top-filter__nav  top-filter__nav--down button" href="#"></a>
 								</li>
 							</ul>
 							<ul class="goods__list products-list">
@@ -346,15 +345,15 @@
 				</div>
 			</section>
 		</main>
-        <footer class="main-footer  main-footer--inner">
-            <div class="main-footer__wrapper container">
-                <section class="footer-menu">
-                    <div class="footer-menu__box">
-                        <a class="footer-menu__logo-button button" href="#">Техномарт</a>
-                        <p class="footer-menu__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-                        +7 (812) 555-05-55
-                        </p>
-                    </div>
+		<footer class="main-footer  main-footer--inner">
+			<div class="main-footer__wrapper container">
+				<section class="footer-menu">
+					<div class="footer-menu__box">
+						<a class="footer-menu__logo-button button" href="#">Техномарт</a>
+						<p class="footer-menu__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+						+7 (812) 555-05-55
+						</p>
+					</div>
 					<nav class="footer-nav">
 						<ul class="footer-nav__list">
 							<li class="footer-nav__item">
@@ -388,42 +387,46 @@
 							</li>
 						</ul>
 					</nav>
-                </section>
-            </div>
-            <section class="social">
-                <div class="social__wrapper container">
-                    <p class="social__text">© 2010–2017 Компания «Техномарт»<br>
-                    Все права защищены
-                    </p>
-                    <ul class="social__list">
-                        <li class="social__item">
-                            <a class="social__button button" href="#">
-                                <img class="social__img" src="images/vk-icon.png" width="26px" height="15px" alt="Вктонтакте">
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__button button" href="#">
-                                <img class="social__img" src="images/fb-icon.png" width="12px" height="22px" alt="Фейсбук">
-                            </a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__button button" href="#">
-                                <img class="social__img" src="images/insta-icon.png" width="21px" height="21px" alt="Инстаграмм">
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="feedback__list">
-                        <li class="feedback__item">
-                            <p class="feedback__text">Обратная связь:</p>
-                            <a class="feedback__site" href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-                        </li>
-                        <li class="feedback__item feedback__item--right">
-                            <p class="feedback__text">Разработано -</p>
-                            <a class="feedback__site" href="https://htmlacademy.ru">htmlacademy.ru</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </footer>
+				</section>
+			</div>
+				<section class="social">
+					<div class="social__wrapper container">
+						<p class="social__text">© 2010–2017 Компания «Техномарт»<br>
+						Все права защищены
+						</p>
+						<ul class="social__list">
+							<li class="social__item">
+								<a class="social__button button" href="#">
+									<img class="social__img" src="images/vk-icon.png" width="26px" height="15px" alt="Вктонтакте">
+								</a>
+							</li>
+							<li class="social__item">
+								<a class="social__button button" href="#">
+									<img class="social__img" src="images/fb-icon.png" width="12px" height="22px" alt="Фейсбук">
+								</a>
+							</li>
+							<li class="social__item">
+								<a class="social__button button" href="#">
+									<img class="social__img" src="images/insta-icon.png" width="21px" height="21px" alt="Инстаграмм">	
+								</a>
+							</li>
+						</ul>
+						<ul class="feedback__list">
+							<li class="feedback__item">
+								<p class="feedback__text">Обратная связь:</p>
+								<a class="feedback__site" href="https://mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+							</li>
+							<li class="feedback__item feedback__item--right">
+								<p class="feedback__text">Разработано -</p>
+								<a class="feedback__site" href="https://htmlacademy.ru">htmlacademy.ru</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+		</footer>
+			<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+			<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+			<script type="text/javascript" src="slick/slick.min.js"></script>
+			<script type="text/javascript" src="scripts/script.js"></script>
 	</body>
 </html>
