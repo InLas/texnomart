@@ -12,47 +12,47 @@ let deliveryButton = document.querySelector(".slider-buttons-list__button--deliv
 let warrantyButton = document.querySelector(".slider-buttons-list__button--warranty");
 let creditButton = document.querySelector(".slider-buttons-list__button--credit");
 
-deliveryButton.addEventListener("click", function (evt)  {
-    evt.preventDefault();
+deliveryButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
   offset = offset + 0;
-  if (offset > 0)  {
-      offset = 0;
+  if (offset > 0) {
+    offset = 0;
   }
   sliderLine.style.bottom = -offset + "px";
 });
 
-warrantyButton.addEventListener("click", function (evt)  {
-    evt.preventDefault();
+warrantyButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
   offset = offset + 285;
-  if (offset > 0)  {
-      offset = 285;
+  if (offset > 0) {
+    offset = 285;
   }
   sliderLine.style.bottom = offset + "px";
 });
 
-creditButton.addEventListener("click", function (evt)  {
-    evt.preventDefault();
+creditButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
   offset = offset + 570;
-  if (offset > 0)  {
-      offset = 570;
+  if (offset > 0) {
+    offset = 570;
   }
   sliderLine.style.bottom = offset + "px";
 });
 
 servicesButtons.forEach(item => {
-	item.addEventListener('click', function () {
+  item.addEventListener('click', function () {
     let current = document.getElementsByClassName("slider-buttons-list__button--active");
     current[0].className = current[0].className.replace(" slider-buttons-list__button--active", "");
     this.className += " slider-buttons-list__button--active";
-	})
+  })
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
   $('.features__slider').slick({
-      dots: true,
-      arrows: true,
-      draggable: false,
-      speed: 0,
+    dots: true,
+    arrows: true,
+    draggable: false,
+    speed: 0,
   });
 });
 
@@ -73,4 +73,15 @@ formOpen.addEventListener("click", function (evt) {
 
 formClose.addEventListener("click", function () {
   formShow.classList.remove("about-us__modal-write-us--show");
+});
+
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    if (mapShow.classList.contains("about-us__modal-map--show")) {
+      mapShow.classList.remove("about-us__modal-map--show");
+    }
+    if (formShow.classList.contains("about-us__modal-write-us--show")) {
+      formShow.classList.remove("about-us__modal-write-us--show");
+    }
+  }
 });
